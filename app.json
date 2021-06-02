@@ -11,6 +11,8 @@
     "enablePullDownRefresh": true
   },
   "tabBar": {
+    "color": "#b7bbbf",
+    "selectedColor": "#2B333B",
     "list": [{
       "text": "首页",
       "pagePath": "pages/index/index",

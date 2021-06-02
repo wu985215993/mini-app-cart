@@ -1,6 +1,5 @@
 /**index.wxss**/
 .container{
-  background-color: #ccc;
 }
 .userinfo {
   display: flex;
