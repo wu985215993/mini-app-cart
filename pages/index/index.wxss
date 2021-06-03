@@ -1,1 +1,23 @@
 /**index.wxss**/
+.header{
+  position: relative;
+}
+.header-input{
+  margin: 22rpx 36rpx 14rpx 36rpx;
+  border: 1rpx solid #d9dde1;
+  line-height: 70rpx;
+  border-radius: 36rpx;
+  padding: 0 36rpx;
+  text-align: center;
+  font-size: 26rpx;
+}
+.header-input-placeholder{
+  color: rgba(133,133,133,0.6);
+} 
+.header-input-icon{
+  position: absolute;
+  left: 50%;
+  top: 14rpx;
+  transform: translateX(-184rpx);
+  color: rgba(133,133,133,0.6);
+}

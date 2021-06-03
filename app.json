@@ -4,8 +4,8 @@
   ],
   "window":{
     "backgroundTextStyle":"dark",
-    "navigationBarBackgroundColor": "#ccc",
-    "navigationBarTitleText": "Weixin",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "蔚课",
     "navigationBarTextStyle":"black"
   },
   "tabBar": {
