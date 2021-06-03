@@ -1,11 +1,10 @@
 {
   "pages":[
-    "pages/index/index",
-    "pages/logs/logs"
+    "pages/index/index"
   ],
   "window":{
     "backgroundTextStyle":"dark",
-    "navigationBarBackgroundColor": "#fff",
+    "navigationBarBackgroundColor": "#ccc",
     "navigationBarTitleText": "Weixin",
     "navigationBarTextStyle":"black"
   },
@@ -24,7 +23,7 @@
       "selectedIconPath": "./resources/cart-active.png"
     },{
       "text": "我的",
-      "pagePath": "pages/logs/logs",
+      "pagePath": "pages/index/index",
       "iconPath": "./resources/my.png",
       "selectedIconPath": "./resources/my-active.png"
     }]
