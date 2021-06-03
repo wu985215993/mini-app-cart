@@ -1,8 +1,9 @@
 /**index.wxss**/
-.header{
+.header {
   position: relative;
 }
-.header-input{
+
+.header-input {
   margin: 22rpx 36rpx 14rpx 36rpx;
   border: 1rpx solid #d9dde1;
   line-height: 70rpx;
@@ -11,13 +12,54 @@
   text-align: center;
   font-size: 26rpx;
 }
-.header-input-placeholder{
-  color: rgba(133,133,133,0.6);
-} 
-.header-input-icon{
+
+.header-input-placeholder {
+  color: rgba(133, 133, 133, 0.6);
+}
+
+.header-input-icon {
   position: absolute;
   left: 50%;
   top: 14rpx;
   transform: translateX(-184rpx);
-  color: rgba(133,133,133,0.6);
+  color: rgba(133, 133, 133, 0.6);
+}
+
+.navigator {
+  display: flex;
+  line-height: 112rpx;
+  margin-bottom: 6rpx;
+}
+
+.navigator-item {
+  position: relative;
+  flex: 1;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 32rpx;
+  color: #2b333b;
+}
+.navigator-img{
+  position: relative;
+  top: 6rpx;
+  width: 36rpx;
+  height: 36rpx;
+}
+.navigator-active{
+  position: absolute;
+  width: 32rpx;
+  height: 8rpx;
+  border-radius: 4rpx;
+  background-color: #f01414;
+  left: 90rpx;
+  bottom: 20rpx;
+}
+.swiper-item{
+  box-sizing: border-box;
+  padding: 0 6rpx;
+}
+.swiper-image{
+  width: 708rpx;
+  border-radius: 12rpx;
+  height: 234rpx;
 }

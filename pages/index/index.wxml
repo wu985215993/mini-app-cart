@@ -1,6 +1,39 @@
 <!--index.wxml-->
 <view class="header">
   <input type="text" class="header-input" placeholder="AngularJS·MySQL·Java"
-    placeholder-class="header-input-placeholder" bindinput="handleInputChange"/>
-  <icon type="search" class="header-input-icon" size="13" wx:if="{{showIcon}}"/>
+    placeholder-class="header-input-placeholder" bindinput="handleInputChange" />
+  <icon type="search" class="header-input-icon" size="13" wx:if="{{showIcon}}" />
 </view>
+<view class="navigator">
+  <view class="navigator-item">
+    <image class="navigator-img" src="../../resources/recommend.png" />
+    推荐
+    <view class="navigator-active" />
+  </view>
+  <view class="navigator-item">
+    <image class="navigator-img" src="../../resources/path.png" />
+    路径
+  </view>
+  <view class="navigator-item">
+    <image class="navigator-img" src="../../resources/project.png" />
+    实战
+  </view>
+  <view class="navigator-item">
+    <image class="navigator-img" src="../../resources/activity.png" />
+    活动
+  </view>
+</view>
+<swiper previous-margin="18rpx" next-margin="18rpx" circular="{{true}}" autoplay="{{true}}">
+  <swiper-item class="swiper-item">
+    <image class="swiper-image" src="http://img.mukewang.com/60b5081a0932032418000600.png" />
+  </swiper-item>
+  <swiper-item class="swiper-item">
+    <image class="swiper-image" src="http://img.mukewang.com/60b5083509ab754600000000.png" />
+  </swiper-item>
+  <swiper-item class="swiper-item">
+    <image class="swiper-image" src="http://img.mukewang.com/60b5084b091d043518000600.png" />
+  </swiper-item>
+  <swiper-item class="swiper-item">
+    <image class="swiper-image" src="http://img.mukewang.com/60b5085f09b03c5b18000600.png" />
+  </swiper-item>
+</swiper>
