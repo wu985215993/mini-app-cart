@@ -39,13 +39,15 @@
   font-size: 32rpx;
   color: #2b333b;
 }
-.navigator-img{
+
+.navigator-img {
   position: relative;
   top: 6rpx;
   width: 36rpx;
   height: 36rpx;
 }
-.navigator-active{
+
+.navigator-active {
   position: absolute;
   width: 32rpx;
   height: 8rpx;
@@ -54,12 +56,100 @@
   left: 90rpx;
   bottom: 20rpx;
 }
-.swiper-item{
+
+.swiper {
+  height: 234rpx;
+}
+
+.swiper-item {
   box-sizing: border-box;
   padding: 0 6rpx;
 }
-.swiper-image{
+
+.swiper-image {
   width: 708rpx;
   border-radius: 12rpx;
   height: 234rpx;
+}
+
+.project {
+  margin-top: 32rpx;
+  margin-left: 40rpx;
+}
+
+.project-title {
+  line-height: 32rpx;
+  font-size: 28rpx;
+  color: #2b333b;
+  font-weight: bold;
+}
+
+.project-item {
+  display: flex;
+  margin-top: 16rpx;
+}
+
+.project-item-pic {
+  width: 208rpx;
+  height: 136rpx;
+  border-radius: 16rpx;
+}
+
+.project-item-content {
+  flex: 1;
+  margin-left: 24rpx;
+  margin-right: 40rpx;
+  border-bottom: 1rpx solid #d9dde1;
+  padding-bottom: 28rpx;
+}
+
+.project-item-title {
+  line-height: 40rpx;
+  font-size: 32rpx;
+  color: #2b333b;
+  font-weight: bold;
+}
+
+.project-item-tags {
+  line-height: 32rpx;
+  margin-top: 12rpx;
+  font-size: 24rpx;
+}
+
+.project-item-tags view {
+  float: left;
+  margin-right: 18rpx;
+}
+
+.project-item-text {
+  color: #71777d;
+}
+
+.project-item-price-active {
+  font-weight: bold;
+  color: #f01414;
+}
+
+.project-item-notice {
+  padding: 0 10rpx;
+  display: inline-block;
+  line-height: 32rpx;
+  background: rgba(242, 13, 13, 0.1);
+  border-radius: 4rpx;
+  font-size: 20rpx;
+  color: #f20d0d;
+}
+
+.project-item-user {
+  line-height: 32rpx;
+  color: #71777d;
+  font-size: 24rpx;
+}
+
+.project-item-icon {
+  position: relative;
+  top: 2rpx;
+  left: 4rpx;
+  width: 22rpx;
+  height: 22rpx;
 }
