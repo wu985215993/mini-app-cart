@@ -24,37 +24,44 @@
   </view>
 </view>
 <swiper previous-margin="18rpx" class="swiper" next-margin="18rpx" circular="{{true}}" autoplay="{{true}}">
-  <swiper-item class="swiper-item">
-    <image class="swiper-image" src="http://img.mukewang.com/60b5081a0932032418000600.png" />
-  </swiper-item>
-  <swiper-item class="swiper-item">
-    <image class="swiper-image" src="http://img.mukewang.com/60b5083509ab754600000000.png" />
-  </swiper-item>
-  <swiper-item class="swiper-item">
-    <image class="swiper-image" src="http://img.mukewang.com/60b5084b091d043518000600.png" />
-  </swiper-item>
-  <swiper-item class="swiper-item">
-    <image class="swiper-image" src="http://img.mukewang.com/60b5085f09b03c5b18000600.png" />
+  <swiper-item 
+    wx:for="{{swiperList}}" 
+    wx:key="*this"
+  class="swiper-item">
+    <image class="swiper-image" src="{{item.imgUrl}}" />
   </swiper-item>
 </swiper>
 <view class="project">
   <view class="project-title">实战推荐</view>
-  <view class="project-item">
+  <view 
+    class="project-item"
+    wx:for="{{courses}}"
+    wx:key="*this"
+    >
     <image class="project-item-pic"
-    src="https://img2.mukewang.com/szimg/5fbf616b09c6210a12000676.png"
+    src="{{item.imgUrl}}"
     />
     <view class="project-item-content">
       <view class="project-item-title">
-        微信小程序入门与实战常用组件开发技巧API 项目实战
+        {{item.title}}
       </view>
       <view class="project-item-tags">
-        <view class="project-item-price-active">￥198</view>
-        <view class="project-item-text">￥198</view>
-        <view class="project-item-notice">APP购买立减 ￥3</view>
-        <view class="project-item-text">中级</view>
+        <view 
+          class="project-item-price-active"
+          wx:if="{{item.promotion}}"
+        >￥{{item.price}}</view>
+        <view 
+          class="project-item-text"
+          wx:if="{{!item.promotion}}"
+          >￥{{item.price}}</view>
+        <view 
+          class="project-item-notice"
+          wx:if="{{item.notice}}"
+          >{{item.notice}}</view>
+        <view class="project-item-text">{{item.level}}</view>
         <view class="project-item-user">
           <image class="project-item-icon" src="../../resources/user.png"/>
-          2892
+          {{item.sales}}
         </view>
       </view>
     </view>
