@@ -5,23 +5,17 @@
   <icon type="search" class="header-input-icon" size="13" wx:if="{{showIcon}}" />
 </view>
 <view class="navigator">
-  <view class="navigator-item">
-    <image class="navigator-img" src="../../resources/recommend.png" />
-    推荐
-    <view class="navigator-active" />
+  <view class="navigator-item"
+    wx:for="{{tabs}}"
+    wx:key="type"
+    data-type="{{item.type}}"
+    bindtap="changeType"
+  >
+    <image class="navigator-img" src="../../resources/{{item.type}}.png" />
+    {{item.name}}
+    <view hidden="{{type !== item.type}}" class="navigator-active navigator-active-{{item.type}}" />
   </view>
-  <view class="navigator-item">
-    <image class="navigator-img" src="../../resources/path.png" />
-    路径
-  </view>
-  <view class="navigator-item">
-    <image class="navigator-img" src="../../resources/project.png" />
-    实战
-  </view>
-  <view class="navigator-item">
-    <image class="navigator-img" src="../../resources/activity.png" />
-    活动
-  </view>
+  
 </view>
 <swiper previous-margin="18rpx" class="swiper" next-margin="18rpx" circular="{{true}}" autoplay="{{true}}">
   <swiper-item wx:for="{{swiperList}}" wx:key="*this" class="swiper-item">
