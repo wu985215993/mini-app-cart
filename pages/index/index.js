@@ -13,18 +13,18 @@ Page({
       {name: "实战",type: "project"},
       {name: "活动",type: "activity"},
     ],
-    activity:[]
+    activities:[]
   },
   onLoad(){
     wx.request({
       url: 'https://www.fastmock.site/mock/c111f5d5e2b292b850b0db0188818df0/wechat/api/getData',
       success: (res) => {
         const {data:{data}} = res;
-        const {swiperList,courses,activity} = data;
+        const {swiperList,courses,activities} = data;
         this.setData({
           swiperList,
           courses,
-          activity
+          activities
         })
       }
     })
