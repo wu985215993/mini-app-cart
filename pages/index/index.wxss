@@ -168,3 +168,10 @@
   font-size: 24rpx;
   margin-top: 20rpx;
 }
+.activity-item{
+  display: block;
+  width: 702rpx;
+  height: 232rpx;
+  margin: 0 auto 32rpx auto;
+  border-radius: 12rpx;
+}

@@ -17,6 +17,7 @@
   </view>
   
 </view>
+<block wx:if="{{type === 'recommend'}}">
 <swiper previous-margin="18rpx" class="swiper" next-margin="18rpx" circular="{{true}}" autoplay="{{true}}">
   <swiper-item wx:for="{{swiperList}}" wx:key="*this" class="swiper-item">
     <image class="swiper-image" src="{{item.imgUrl}}" />
@@ -46,3 +47,14 @@
     </view>
   </view>
 </view>
+</block>
+<block wx:if="{{type === 'activity'}}">
+<view>
+  <image
+    class="activity-item"
+    wx:for="{{activity}}"
+    wx:key="imgUrl"
+    src="{{item.imgUrl}}"
+  />
+</view>
+</block>
