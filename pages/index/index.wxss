@@ -153,3 +153,7 @@
   width: 22rpx;
   height: 22rpx;
 }
+.project-empty{
+  font-size: 24rpx;
+  margin-top: 20rpx;
+}
