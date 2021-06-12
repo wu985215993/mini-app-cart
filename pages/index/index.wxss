@@ -56,7 +56,18 @@
   left: 90rpx;
   bottom: 20rpx;
 }
-
+.navigator-active-recommend {
+  background: #F01414;
+}
+.navigator-active-activity {
+  background: #FA58F4;
+}
+.navigator-active-path {
+  background: #8000FF;
+}
+.navigator-active-project {
+  background: #B18904;
+}
 .swiper {
   height: 234rpx;
 }
@@ -152,4 +163,15 @@
   left: 4rpx;
   width: 22rpx;
   height: 22rpx;
+}
+.project-empty{
+  font-size: 24rpx;
+  margin-top: 20rpx;
+}
+.activity-item{
+  display: block;
+  width: 702rpx;
+  height: 232rpx;
+  margin: 0 auto 32rpx auto;
+  border-radius: 12rpx;
 }
