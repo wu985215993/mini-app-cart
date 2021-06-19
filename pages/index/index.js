@@ -43,5 +43,6 @@ Page({
   changeType(e) {
     const type = e.currentTarget.dataset.type;
     this.setData({ type });
-  }
+  },
+ 
 })

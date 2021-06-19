@@ -5,7 +5,9 @@
   </swiper-item>
 </swiper>
 <view class="project">
-  <view class="project-title">实战推荐</view>
+<navigator url="/pages/hot/hot">
+  <view class="project-title" bindtap="handleRecommendTap">实战推荐</view>
+</navigator>
   <view class="project-empty"
       hidden="{{!(searchList && searchList.length == 0)}}"
   >无搜索结果</view>

@@ -1,0 +1,19 @@
+.tabs {
+  display: flex;
+  padding: 0 120rpx;
+  height: 88rpx;
+  box-shadow: 1 2px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+.tab {
+  line-height: 72rpx;
+  flex: 1;
+  text-align: center;
+  font-size: 36rpx;
+  color: #71777D;
+  position: relative;
+}
+
+.active {
+  color: #2B333B;
+}
