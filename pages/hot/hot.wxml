@@ -1,0 +1,8 @@
+<View class="tabs">
+  <view class="tab active">
+    实战排行
+  </view>
+  <view class="tab">
+    路径排行
+  </view>
+</View>
