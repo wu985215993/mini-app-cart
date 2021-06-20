@@ -1,8 +1,52 @@
-<View class="tabs">
+<view class="tabs">
   <view class="tab active">
     实战排行
+    <view class="active-bar"></view>
   </view>
   <view class="tab">
     路径排行
   </view>
-</View>
+</view>
+<view class="time">
+  <view class="week">周</view>
+  <view class="month time-active">月</view>
+</view>
+
+<view class="list">
+  <view class="item">
+    <image class="item-image" src="https://img.mukewang.com/szimg/5ff2877809ad013512000676-358-201.jpg"></image>
+    <view class="item-title">
+      <view class="item-title-inner">IOS界面传值</view>
+    </view>
+    <view class="item-number">
+      <image class="item-number-img" src="../../resources/first.png"></image>
+    </view>
+  </view>
+  <view class="item">
+    <image class="item-image" src="https://img.mukewang.com/szimg/5ff2877809ad013512000676-358-201.jpg"></image>
+    <view class="item-title">
+      <view class="item-title-inner">IOS界面传值</view>
+    </view>
+    <view class="item-number">
+      <image class="item-number-img" src="../../resources/first.png"></image>
+    </view>
+  </view>
+  <view class="item">
+    <image class="item-image" src="https://img.mukewang.com/szimg/5ff2877809ad013512000676-358-201.jpg"></image>
+    <view class="item-title">
+      <view class="item-title-inner">IOS界面传值</view>
+    </view>
+    <view class="item-number">
+      <image class="item-number-img" src="../../resources/first.png"></image>
+    </view>
+  </view>
+  <view class="item">
+    <image class="item-image" src="https://img.mukewang.com/szimg/5ff2877809ad013512000676-358-201.jpg"></image>
+    <view class="item-title">
+      <view class="item-title-inner">IOS界面传值</view>
+    </view>
+    <view class="item-number">
+      <image class="item-number-img" src="../../resources/first.png"></image>
+    </view>
+  </view>
+</view>
