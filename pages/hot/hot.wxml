@@ -1,15 +1,13 @@
 <view class="tabs">
-  <view class="tab active">
-    实战排行
-    <view class="active-bar"></view>
-  </view>
-  <view class="tab">
-    路径排行
+  <view wx:for="{{rankTypes}}" wx:key="type" class="tab {{rankType === item.type? 'active':''}}"
+    bindtap="handleTabChange" data-type="{{item.type}}">
+    {{item.title}}
+    <view wx:if="{{rankType === item.type}}" class="active-bar"></view>
   </view>
 </view>
 <view class="time">
-  <view class="week">周</view>
-  <view class="month time-active">月</view>
+  <view class="period {{rankPeriod === item.value?'period-active':''}}" wx:for="{{rankPeriods}}"
+    bindtap="handlePeriodChange" data-type="{{item.value}}">{{item.title}}</view>
 </view>
 
 <view class="list">

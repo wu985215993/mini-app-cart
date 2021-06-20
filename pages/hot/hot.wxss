@@ -39,8 +39,7 @@
   font-size: 28rpx;
 }
 
-.week,
-.month {
+.period {
   text-align: center;
   flex: 1;
   height: 52rpx;
@@ -50,7 +49,7 @@
   margin: 6rpx;
 }
 
-.time-active {
+.period-active {
   color: #fff;
   background-color: #71777D;
 }
