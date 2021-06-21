@@ -6,45 +6,22 @@
   </view>
 </view>
 <view class="time">
-  <view class="period {{rankPeriod === item.value?'period-active':''}}" wx:for="{{rankPeriods}}"
+  <view class="period {{rankPeriod === item.value?'period-active':''}}" wx:key="*this" wx:for="{{rankPeriods}}"
     bindtap="handlePeriodChange" data-type="{{item.value}}">{{item.title}}</view>
 </view>
 
 <view class="list">
-  <view class="item">
-    <image class="item-image" src="https://img.mukewang.com/szimg/5ff2877809ad013512000676-358-201.jpg"></image>
+  <view class="item" wx:for="{{currentList}}" wx:key="title">
+    <image class="item-image" src="{{item.imgUrl}}"></image>
     <view class="item-title">
-      <view class="item-title-inner">IOS界面传值</view>
+      <view class="item-title-inner">{{item.title}}</view>
     </view>
     <view class="item-number">
-      <image class="item-number-img" src="../../resources/first.png"></image>
+      <image class="item-number-img" src="../../resources/first.png" wx:if="{{index === 0}}"></image>
+      <image class="item-number-img" src="../../resources/second.png" wx:elif="{{index === 1}}"></image>
+      <image class="item-number-img" src="../../resources/third.png" wx:elif="{{index === 2}}"></image>
+      <view wx:else class="item-number-common">{{index+1}}</view>
     </view>
   </view>
-  <view class="item">
-    <image class="item-image" src="https://img.mukewang.com/szimg/5ff2877809ad013512000676-358-201.jpg"></image>
-    <view class="item-title">
-      <view class="item-title-inner">IOS界面传值</view>
-    </view>
-    <view class="item-number">
-      <image class="item-number-img" src="../../resources/first.png"></image>
-    </view>
-  </view>
-  <view class="item">
-    <image class="item-image" src="https://img.mukewang.com/szimg/5ff2877809ad013512000676-358-201.jpg"></image>
-    <view class="item-title">
-      <view class="item-title-inner">IOS界面传值</view>
-    </view>
-    <view class="item-number">
-      <image class="item-number-img" src="../../resources/first.png"></image>
-    </view>
-  </view>
-  <view class="item">
-    <image class="item-image" src="https://img.mukewang.com/szimg/5ff2877809ad013512000676-358-201.jpg"></image>
-    <view class="item-title">
-      <view class="item-title-inner">IOS界面传值</view>
-    </view>
-    <view class="item-number">
-      <image class="item-number-img" src="../../resources/first.png"></image>
-    </view>
-  </view>
+
 </view>
