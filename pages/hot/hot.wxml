@@ -6,7 +6,7 @@
   </view>
 </view>
 <view class="time">
-  <view class="period {{rankPeriod === item.value?'period-active':''}}" wx:key="*this" wx:for="{{rankPeriods}}"
+  <view class="period {{rankPeriod === item.value?'period-active':''}}" wx:key="value" wx:for="{{rankPeriods}}"
     bindtap="handlePeriodChange" data-type="{{item.value}}">{{item.title}}</view>
 </view>
 

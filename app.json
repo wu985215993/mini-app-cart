@@ -1,8 +1,8 @@
 {
   "pages": [
-    "pages/hot/hot",
     "pages/index/index",
-    "pages/personal/person"
+    "pages/personal/person",
+    "pages/hot/hot"
   ],
   "window": {
     "backgroundTextStyle": "dark",
@@ -13,8 +13,7 @@
   "tabBar": {
     "color": "#b7bbbf",
     "selectedColor": "#2B333B",
-    "list": [
-      {
+    "list": [{
         "text": "首页",
         "pagePath": "pages/index/index",
         "iconPath": "./resources/home.png",
